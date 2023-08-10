@@ -1,5 +1,4 @@
 <?php
-
 class Post {
     public $likes = 0;
     public $comments = [];

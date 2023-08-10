@@ -1,7 +1,4 @@
 <?php
-
-use Post as GlobalPost;
-
 class Post {
     public $likes = 0;
     public $comments = [];
