@@ -9,11 +9,12 @@ class Post {
 
 
     /* Sempre que se criar um objeto o constructor é chamado */
-    public function __construct() {
+    public function __construct($author) {
         echo 'teste Construtor ...';
         $this->likes = 5;
         $this->comments[] = 'Bem Vindo aos comentários';
-        $this->author = "Rodrigo de Souza Corrêa";        
+        /* sempre lembbrar que parâmetros e caracteristicas são coisas diferentes embora possam ter o mesmo nome */
+        $this->author = $author;        
     }
 
     public function aumentarLikes () {
@@ -21,7 +22,7 @@ class Post {
     }
 };
 
-$var = new Post();
+$var = new Post("Rodrigo");
 
 echo $var->author;
 echo " " . $var->comments[0];
