@@ -1,0 +1,9 @@
+<?php 
+require 'classe1.php';
+require 'classe2.php';
+
+/* Utilizando namespace */
+$a = new classe1\MinhaClasse();
+echo $a->testar();
+
+?>
